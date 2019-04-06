@@ -10,7 +10,7 @@ namespace CheckpointSystem
 		[SerializeField] private CheckpointId m_id;
 		internal CheckpointId Id => m_id;
 
-		private void Awake()
+		private void Start()
 		{
 			CheckpointController.Register(this);
 		}
