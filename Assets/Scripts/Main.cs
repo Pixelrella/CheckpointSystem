@@ -2,22 +2,19 @@ using CheckpointSystem;
 using GameProgressionSaving;
 using UnityEngine;
 
-namespace DefaultNamespace
+public class Main : MonoBehaviour
 {
-    public class Main : MonoBehaviour
+    private PlayerPrefsStore m_persistentProgression;
+
+    private void Awake()
     {
-        private PlayerPrefsStore m_persistentProgression;
-
-        private void Awake()
-        {
-            m_persistentProgression = new PlayerPrefsStore();
+        m_persistentProgression = new PlayerPrefsStore();
             
-            CheckpointController.Initialise(m_persistentProgression);
-        }
+        CheckpointController.Initialise(m_persistentProgression);
+    }
 
-        private void OnDestroy()
-        {
-            m_persistentProgression.PersistAll();
-        }
+    private void OnDestroy()
+    {
+        m_persistentProgression.PersistAll();
     }
 }

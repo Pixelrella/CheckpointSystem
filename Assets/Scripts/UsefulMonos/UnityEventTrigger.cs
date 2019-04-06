@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace DefaultNamespace
+namespace UsefulMonos
 {
     public class UnityEventTrigger : MonoBehaviour
     {
