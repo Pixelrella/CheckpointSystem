@@ -4,4 +4,4 @@ A system to make a player's progress persistent. It uses the power of Unity even
 
 I created this system including tooling for game designers at the Outsiders.
 
-For how this works, please refer to: https://www.gamedev.net/articles/programming/general-and-gameplay-programming/building-a-save-system-for-level-objects-in-unity-pt1-checkpoints-r5048/
+In this [article](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/building-a-save-system-for-level-objects-in-unity-pt1-checkpoints-r5048/) I explain how this system works.
